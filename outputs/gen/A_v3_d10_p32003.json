@@ -1,0 +1,68 @@
+{
+ "prime": 32003,
+ "v": 3,
+ "d": 10,
+ "k": 2,
+ "N": 24,
+ "mode": "diagiter",
+ "L.L": 73,
+ "runs": [
+  {
+   "seed": 0,
+   "K": 10,
+   "h_kk_prim": 32661,
+   "chains": {
+    "[0, 10, 20]": {
+     "unknowns": 3475,
+     "kernel": 1,
+     "tangents_used": 10
+    },
+    "[1, 11, 21]": {
+     "unknowns": 3709,
+     "kernel": 1,
+     "tangents_used": 21
+    },
+    "[2, 12, 22]": {
+     "unknowns": 3793,
+     "kernel": 1,
+     "tangents_used": 36
+    },
+    "[3, 13, 23]": {
+     "unknowns": 3709,
+     "kernel": 1,
+     "tangents_used": 21
+    },
+    "[4, 14, 24]": {
+     "unknowns": 3475,
+     "kernel": 1,
+     "tangents_used": 10
+    },
+    "[5, 15]": {
+     "unknowns": 3145,
+     "kernel": 1,
+     "tangents_used": 7
+    },
+    "[6, 16]": {
+     "unknowns": 2809,
+     "kernel": 1,
+     "tangents_used": 4
+    },
+    "[7, 17]": {
+     "unknowns": 2592,
+     "kernel": 1,
+     "tangents_used": 3
+    },
+    "[8, 18]": {
+     "unknowns": 2809,
+     "kernel": 1,
+     "tangents_used": 4
+    },
+    "[9, 19]": {
+     "unknowns": 3145,
+     "kernel": 1,
+     "tangents_used": 7
+    }
+   }
+  }
+ ]
+}

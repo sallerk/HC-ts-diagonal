@@ -1,0 +1,6 @@
+decomposition check failed
+seed 1 R ok 1 dim K 6 planes in K 6 rank of planes 6 | random in K 0 fake plane in K 0
+decomposition check failed
+seed 2 R ok 1 dim K 6 planes in K 6 rank of planes 6 | random in K 0 fake plane in K 0
+decomposition check failed
+seed 3 R ok 1 dim K 6 planes in K 6 rank of planes 6 | random in K 0 fake plane in K 0

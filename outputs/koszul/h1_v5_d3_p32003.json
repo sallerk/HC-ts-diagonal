@@ -1,0 +1,45 @@
+{
+ "prime": 32003,
+ "v": 5,
+ "d": 3,
+ "sigma": 5,
+ "predicted_j": 4,
+ "levels": [
+  {
+   "j": 1,
+   "dimZ": 1,
+   "dimB": 1,
+   "H1": 0,
+   "predicted": 0
+  },
+  {
+   "j": 2,
+   "dimZ": 5,
+   "dimB": 5,
+   "H1": 0,
+   "predicted": 0
+  },
+  {
+   "j": 3,
+   "dimZ": 10,
+   "dimB": 10,
+   "H1": 0,
+   "predicted": 0
+  },
+  {
+   "j": 4,
+   "dimZ": 15,
+   "dimB": 10,
+   "H1": 5,
+   "predicted": 5
+  },
+  {
+   "j": 5,
+   "dimZ": 5,
+   "dimB": 5,
+   "H1": 0,
+   "predicted": 0
+  }
+ ],
+ "all_match": true
+}

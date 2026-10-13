@@ -1,0 +1,8 @@
+(v,d)=(2,4) N=16 rankG_modp=10 expected=10 badRelations=0 s=-2 detGramA=96 index[Sat:A]=1
+(v,d)=(3,3) N=27 rankG_modp=9 expected=9 badRelations=0 s=3 detGramA=54 index[Sat:A]=1
+(v,d)=(3,5) N=125 rankG_modp=65 expected=65 badRelations=0 s=13 detGramA=1713660 index[Sat:A]=1
+(v,d)=(4,4) N=256 rankG_modp=82 expected=82 badRelations=0 s=-20 detGramA=672000 index[Sat:A]=1 | control(2*L_c0) index=2
+(v,d)=(5,3) N=243 rankG_modp=33 expected=33 badRelations=0 s=11 detGramA=3630 index[Sat:A]=1
+(v,d)=(6,3) N=729 rankG_modp=65 expected=65 badRelations=0 s=-21 detGramA=-29106 index[Sat:A]=1 | control(2*L_c0) index=2
+(v,d)=(4,5) N=625 rankG_modp=257 expected=257 badRelations=0 s=-51 detGramA=-1758952260 index[Sat:A]=1
+(v,d)=(5,4) N=1024 rankG_modp=244 expected=244 badRelations=0 s=61 detGramA=54475440 index[Sat:A]=1

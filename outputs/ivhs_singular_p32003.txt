@@ -1,0 +1,9 @@
+two_block seed 1 K = 0
+diagonal seed 1 K = 6
+tritangent_diagonal seed 1 K = 7
+two_block seed 2 K = 0
+diagonal seed 2 K = 6
+tritangent_diagonal seed 2 K = 7
+two_block seed 3 K = 0
+diagonal seed 3 K = 6
+tritangent_diagonal seed 3 K = 7

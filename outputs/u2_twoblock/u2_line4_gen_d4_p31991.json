@@ -1,0 +1,27 @@
+{
+ "prime": 31991,
+ "d": 4,
+ "famF": "line4",
+ "famG": "gen",
+ "seed": 0,
+ "N": 8,
+ "K": 0,
+ "chains": {
+  "[0, 4, 8]": {
+   "unknowns": 363,
+   "kernel": 0
+  },
+  "[1, 5]": {
+   "unknowns": 272,
+   "kernel": 0
+  },
+  "[2, 6]": {
+   "unknowns": 200,
+   "kernel": 0
+  },
+  "[3, 7]": {
+   "unknowns": 272,
+   "kernel": 0
+  }
+ }
+}

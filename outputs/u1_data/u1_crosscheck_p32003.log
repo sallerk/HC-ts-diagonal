@@ -1,0 +1,11 @@
+ln d=4 p=32003 dense_chains=[2, 1, 1, 1] u1_chains=[2, 1, 1, 1] agree=True | HF_S/I_D=[1, 2, 3, 4, 5, 6, 7] | info={} | gram=[[4, 1], [1, -2]] rank=2
+2l d=4 p=32003 dense_chains=[5, 1, 1, 1] u1_chains=[5, 1, 1, 1] agree=True | HF_S/I_D=[1, 4, 6, 8, 10, 12, 14] | info={} | gram=[[4, 1, 1], [1, -2, 0], [1, 0, -2]] rank=3
+tc d=4 p=32003 dense_chains=[2, 1, 1, 1] u1_chains=[2, 1, 1, 1] agree=True | HF_S/I_D=[1, 4, 7, 10, 13, 16, 19] | info={} | gram=[[4, 3], [3, -2]] rank=2
+pc d=4 p=32003 dense_chains=[2, 1, 1, 1] u1_chains=[2, 1, 1, 1] agree=True | HF_S/I_D=[1, 3, 6, 9, 12, 15, 18] | info={'plane_curve_smooth': True} | gram=[[4, 3], [3, 0]] rank=2
+ml d=4 p=32003 dense_chains=[5, 1, 1, 1] u1_chains=[5, 1, 1, 1] agree=True | HF_S/I_D=[1, 3, 5, 7, 9, 11, 13] | info={} | gram=[[4, 1, 1], [1, -2, 1], [1, 1, -2]] rank=3
+lc d=4 p=32003 dense_chains=[5, 1, 1, 1] u1_chains=[5, 1, 1, 1] agree=True | HF_S/I_D=[1, 4, 8, 11, 14, 17, 20] | info={'conic_smooth': True, 'conic_coef_x3^2 (line meets plane x0=0 at (0:0:0:1); disjoint iff nonzero)': 1822} | gram=[[4, 1, 2], [1, -2, 0], [2, 0, -2]] rank=3
+sk d=4 p=32003 dense_chains=[10, 1, 1, 1] u1_chains=[10, 1, 1, 1] agree=True | HF_S/I_D=[1, 4, 9, 12, 15, 18, 21] | info={} | gram=[[4, 1, 1, 1], [1, -2, 0, 0], [1, 0, -2, 0], [1, 0, 0, -2]] rank=4
+pp d=3 p=32003 dense_chains=[5, 1, 1] u1_chains=[5, 1, 1] agree=True | HF_S/I_D=[1, 6, 12, 20, 30, 42, 56] | info={} | gram=[[3, 1, 1], [1, 3, 0], [1, 0, 3]] rank=3
+sc d=3 p=32003 dense_chains=[2, 1, 1] u1_chains=[2, 1, 1] agree=True | HF_S/I_D=[1, 5, 12, 22, 35, 51, 70] | info={} | gram=[[3, 3], [3, 7]] rank=2
+pq d=4 p=32003 dense_chains=[10, 1, 1, 1] u1_chains=[10, 1, 1, 1] agree=True | HF_S/I_D=[1, 3, 6, 10, 14, 18, 22] | info={'plane_curve_smooth': True} | gram=[[4, 4], [4, 4]] rank=1
+ln d=3 p=32003 dense_chains=[1, 1, 36] u1_chains=[1, 1, 36] agree=True | HF_S/I_D=[1, 2, 3, 4, 5] | info={} | gram=[[3, 1], [1, -1]] rank=2

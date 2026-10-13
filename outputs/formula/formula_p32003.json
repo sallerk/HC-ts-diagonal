@@ -1,0 +1,79 @@
+[
+ {
+  "v": 2,
+  "d": 3,
+  "sigma": 2,
+  "K": 6,
+  "predicted": 6
+ },
+ {
+  "v": 2,
+  "d": 4,
+  "sigma": 4,
+  "K": 18,
+  "predicted": 18
+ },
+ {
+  "v": 2,
+  "d": 5,
+  "sigma": 6,
+  "K": 36,
+  "predicted": 36
+ },
+ {
+  "v": 2,
+  "d": 6,
+  "sigma": 8,
+  "K": 60,
+  "predicted": 60
+ },
+ {
+  "v": 2,
+  "d": 7,
+  "sigma": 10,
+  "K": 90,
+  "predicted": 90
+ },
+ {
+  "v": 2,
+  "d": 8,
+  "sigma": 12,
+  "K": 126,
+  "predicted": 126
+ },
+ {
+  "v": 2,
+  "d": 9,
+  "sigma": 14,
+  "K": 168,
+  "predicted": 168
+ },
+ {
+  "v": 2,
+  "d": 10,
+  "sigma": 16,
+  "K": 216,
+  "predicted": 216
+ },
+ {
+  "v": 3,
+  "d": 3,
+  "sigma": 3,
+  "K": 19,
+  "predicted": 19
+ },
+ {
+  "v": 3,
+  "d": 4,
+  "sigma": 6,
+  "K": 52,
+  "predicted": 52
+ },
+ {
+  "v": 4,
+  "d": 3,
+  "sigma": 4,
+  "K": 38,
+  "predicted": 38
+ }
+]

@@ -1,0 +1,31 @@
+{
+ "prime": 32003,
+ "v": 3,
+ "d": 3,
+ "sigma": 3,
+ "predicted_j": 2,
+ "levels": [
+  {
+   "j": 1,
+   "dimZ": 1,
+   "dimB": 1,
+   "H1": 0,
+   "predicted": 0
+  },
+  {
+   "j": 2,
+   "dimZ": 6,
+   "dimB": 3,
+   "H1": 3,
+   "predicted": 3
+  },
+  {
+   "j": 3,
+   "dimZ": 3,
+   "dimB": 3,
+   "H1": 0,
+   "predicted": 0
+  }
+ ],
+ "all_match": true
+}

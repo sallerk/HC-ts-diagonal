@@ -1,0 +1,46 @@
+// S3 implementation B (independent of ivhs_ts.py): Singular, Groebner bases in 6 variables, no Thom-Sebastiani
+// splitting. For X = {P = 0} in P^5 (sextic) and tangent directions t_1..t_N in S_6:
+//   K = {lambda in R_12 : t.lambda = 0 in R_18}  and, by Gorenstein duality (socle degree 24),
+//   dim K = dim (S / (J(P) + (t_1..t_N)))_12,
+// computed as size(kbase(std(I), 12)). Random coefficients from Singular's own generator.
+// Usage: Singular -q ivhs_singular.sing   (prime and seeds set below)
+int pr = 32003;
+ring r = pr, (x0,x1,x2,y0,y1,y2), dp;
+option(redSB);
+proc sw(poly f) { return(subst(subst(subst(f, x0, y0), x1, y1), x2, y2)); }   // F(x) -> F(y)
+ideal Y = y0,y1,y2;
+ideal X = x0,x1,x2;
+ideal mx6 = kbase(std(Y), 6);            // the 28 x-monomials of degree 6
+ideal mx5 = kbase(std(Y), 5);            // the 21 x-monomials of degree 5
+ideal my6 = kbase(std(X), 6);
+ideal mc3 = kbase(std(ideal(x1,y0,y1,y2)), 3);   // cubic monomials in x0, x2
+proc rnd(ideal m) { poly f = 0; int i; for (i = 1; i <= size(m); i++) { f = f + random(1, char(basering) - 1) * m[i]; } return(f); }
+proc kdim(poly P, ideal T) {
+  ideal J = jacob(P);
+  ideal sJ = std(J);
+  if (dim(sJ) != 0) { return(-1); }                    // singular X
+  if (size(kbase(sJ, 12)) != 1751) { return(-2); }     // control: dim R_12
+  return(size(kbase(std(J + T), 12)));
+}
+int s; int i; ideal T;
+for (s = 1; s <= 3; s++) {
+  system("random", 7919 * s);
+  poly F = rnd(mx6);
+  poly G = sw(rnd(mx6));                   // independent sextic in y
+  // two-block family: tangents m(x), m(y)
+  T = mx6 + my6;
+  "two_block seed", s, "K =", kdim(F + G, T);
+  // diagonal family X_{F,F}: tangents m(x) + m(y)
+  T = 0;
+  for (i = 1; i <= size(mx6); i++) { T[i] = mx6[i] + sw(mx6[i]); }
+  "diagonal seed", s, "K =", kdim(F + sw(F), T);
+  // tritangent control: F = c(x0,x2)^2 + x1 H; tangents 2 c dc, x1 dH (diagonal)
+  poly c = rnd(mc3);
+  poly Ft = c^2 + x1 * rnd(mx5);
+  T = 0;
+  for (i = 1; i <= size(mc3); i++) { T[i] = 2 * c * mc3[i] + sw(2 * c * mc3[i]); }
+  for (i = 1; i <= size(mx5); i++) { T[size(mc3) + i] = x1 * mx5[i] + sw(x1 * mx5[i]); }
+  "tritangent_diagonal seed", s, "K =", kdim(Ft + sw(Ft), T);
+  kill F, G, c, Ft;
+}
+quit;

@@ -1,0 +1,65 @@
+{
+ "prime": 32003,
+ "v": 3,
+ "d": 5,
+ "k": 2,
+ "N": 9,
+ "mode": "diag",
+ "L.L": 13,
+ "runs": [
+  {
+   "seed": 0,
+   "K": 5,
+   "h_kk_prim": 580,
+   "chains": {
+    "[0, 5]": {
+     "unknowns": 145,
+     "kernel": 1
+    },
+    "[1, 6]": {
+     "unknowns": 109,
+     "kernel": 1
+    },
+    "[2, 7]": {
+     "unknowns": 72,
+     "kernel": 1
+    },
+    "[3, 8]": {
+     "unknowns": 109,
+     "kernel": 1
+    },
+    "[4, 9]": {
+     "unknowns": 145,
+     "kernel": 1
+    }
+   }
+  },
+  {
+   "seed": 1,
+   "K": 5,
+   "h_kk_prim": 580,
+   "chains": {
+    "[0, 5]": {
+     "unknowns": 145,
+     "kernel": 1
+    },
+    "[1, 6]": {
+     "unknowns": 109,
+     "kernel": 1
+    },
+    "[2, 7]": {
+     "unknowns": 72,
+     "kernel": 1
+    },
+    "[3, 8]": {
+     "unknowns": 109,
+     "kernel": 1
+    },
+    "[4, 9]": {
+     "unknowns": 145,
+     "kernel": 1
+    }
+   }
+  }
+ ]
+}

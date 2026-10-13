@@ -1,0 +1,94 @@
+{
+ "prime": 32003,
+ "v": 3,
+ "d": 6,
+ "sigma": 12,
+ "predicted_j": 8,
+ "levels": [
+  {
+   "j": 1,
+   "dimZ": 1,
+   "dimB": 1,
+   "H1": 0,
+   "predicted": 0
+  },
+  {
+   "j": 2,
+   "dimZ": 3,
+   "dimB": 3,
+   "H1": 0,
+   "predicted": 0
+  },
+  {
+   "j": 3,
+   "dimZ": 6,
+   "dimB": 6,
+   "H1": 0,
+   "predicted": 0
+  },
+  {
+   "j": 4,
+   "dimZ": 10,
+   "dimB": 10,
+   "H1": 0,
+   "predicted": 0
+  },
+  {
+   "j": 5,
+   "dimZ": 15,
+   "dimB": 15,
+   "H1": 0,
+   "predicted": 0
+  },
+  {
+   "j": 6,
+   "dimZ": 18,
+   "dimB": 18,
+   "H1": 0,
+   "predicted": 0
+  },
+  {
+   "j": 7,
+   "dimZ": 19,
+   "dimB": 19,
+   "H1": 0,
+   "predicted": 0
+  },
+  {
+   "j": 8,
+   "dimZ": 21,
+   "dimB": 18,
+   "H1": 3,
+   "predicted": 3
+  },
+  {
+   "j": 9,
+   "dimZ": 15,
+   "dimB": 15,
+   "H1": 0,
+   "predicted": 0
+  },
+  {
+   "j": 10,
+   "dimZ": 10,
+   "dimB": 10,
+   "H1": 0,
+   "predicted": 0
+  },
+  {
+   "j": 11,
+   "dimZ": 6,
+   "dimB": 6,
+   "H1": 0,
+   "predicted": 0
+  },
+  {
+   "j": 12,
+   "dimZ": 3,
+   "dimB": 3,
+   "H1": 0,
+   "predicted": 0
+  }
+ ],
+ "all_match": true
+}

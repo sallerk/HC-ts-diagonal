@@ -1,0 +1,20 @@
+// Control for "K(F) = d at EVERY smooth F" (NOTES E1, Theorem A*): F = Fermat sum x_i^d and F = Fermat + x_1^(d-1) x_2
+// (smooth, fewer symmetries). Same computation as ivhs_gen_singular.sing: dim K = dim (S/(J + T))_N, N = v(d-2).
+// Usage: Singular -q fermat_singular.sing
+proc runf(int v, int d, int pert) {
+  ring r = 32003, (x(1..v), y(1..v)), dp;
+  option(redSB);
+  ideal Yv = y(1..v); ideal Xv = x(1..v);
+  ideal mx = kbase(std(Yv), d);
+  map sw = r, y(1..v), y(1..v);
+  poly F = 0; int i;
+  for (i = 1; i <= v; i++) { F = F + x(i)^d; }
+  if (pert) { F = F + x(1)^(d-1) * x(2); }
+  ideal J = jacob(F + sw(F)); ideal sJ = std(J);
+  int N = v * (d - 2);
+  ideal T; for (i = 1; i <= size(mx); i++) { poly m = mx[i]; T[i] = m + sw(m); kill m; }
+  "v", v, "d", d, "pert", pert, "smooth", dim(sJ) == 0, "dim H^{k,k}_prim", size(kbase(sJ, N)), "dim K", size(kbase(std(J + T), N));
+}
+runf(3, 5, 0); runf(3, 5, 1); runf(3, 6, 0); runf(3, 7, 0); runf(4, 4, 0); runf(4, 4, 1); runf(5, 3, 0); runf(5, 3, 1);
+runf(3, 3, 0); runf(3, 4, 0); runf(4, 3, 0);
+quit;

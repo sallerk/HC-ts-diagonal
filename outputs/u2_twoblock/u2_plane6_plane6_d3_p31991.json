@@ -1,0 +1,23 @@
+{
+ "prime": 31991,
+ "d": 3,
+ "famF": "plane6",
+ "famG": "plane6",
+ "seed": 0,
+ "N": 6,
+ "K": 1,
+ "chains": {
+  "[0, 3, 6]": {
+   "unknowns": 402,
+   "kernel": 1
+  },
+  "[1, 4]": {
+   "unknowns": 261,
+   "kernel": 0
+  },
+  "[2, 5]": {
+   "unknowns": 261,
+   "kernel": 0
+  }
+ }
+}

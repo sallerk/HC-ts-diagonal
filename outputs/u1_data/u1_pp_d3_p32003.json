@@ -1,0 +1,114 @@
+{
+ "prime": 32003,
+ "family": "pp",
+ "v": 6,
+ "d": 3,
+ "seed": 0,
+ "sigma": 6,
+ "C_F_smooth": true,
+ "info": {},
+ "HF_S/I_D": [
+  1,
+  6,
+  12,
+  20,
+  30,
+  42,
+  56
+ ],
+ "min_generators_by_degree": {
+  "2": 9
+ },
+ "dim_I_D(d)": 36,
+ "HF_R": [
+  1,
+  6,
+  15,
+  20,
+  15,
+  6,
+  1
+ ],
+ "HF_N": [
+  1,
+  6,
+  6,
+  2,
+  0,
+  0,
+  0
+ ],
+ "s_D": 3,
+ "n_D": 2,
+ "dim_R_half": 20,
+ "ann_0:I_D": [
+  0,
+  0,
+  0,
+  2,
+  6,
+  6,
+  1
+ ],
+ "gorenstein_duality_ann_t_eq_N_sigma_minus_t": true,
+ "K": 7,
+ "chains": {
+  "0": {
+   "chain_degrees": [
+    0,
+    3,
+    6
+   ],
+   "unknowns": 402,
+   "kernel": 5,
+   "tangents_used": 36
+  },
+  "1": {
+   "chain_degrees": [
+    1,
+    4
+   ],
+   "unknowns": 261,
+   "kernel": 1,
+   "tangents_used": 36
+  },
+  "2": {
+   "chain_degrees": [
+    2,
+    5
+   ],
+   "unknowns": 261,
+   "kernel": 1,
+   "tangents_used": 36
+  }
+ },
+ "invariant_residue": 0,
+ "invariant_chain_value": 5,
+ "gram": [
+  [
+   3,
+   1,
+   1
+  ],
+  [
+   1,
+   3,
+   0
+  ],
+  [
+   1,
+   0,
+   3
+  ]
+ ],
+ "gram_rank": 3,
+ "rho_minus_1": 2,
+ "gen_holds": true,
+ "W_holds": true,
+ "sigma_ge_2d": true,
+ "NL_nD_eq_rho_minus_1": true,
+ "K_eq_d_plus_nD2": true,
+ "pred_chains_ok": true,
+ "time_data_s": 1.8,
+ "time_kernel_s": 0.1
+}

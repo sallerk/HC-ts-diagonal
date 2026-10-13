@@ -1,0 +1,11 @@
+v 3 d 5 pert 0 smooth 1 dim H^{k,k}_prim 580 dim K 5
+v 3 d 5 pert 1 smooth 1 dim H^{k,k}_prim 580 dim K 5
+v 3 d 6 pert 0 smooth 1 dim H^{k,k}_prim 1751 dim K 6
+v 3 d 7 pert 0 smooth 1 dim H^{k,k}_prim 4332 dim K 7
+v 4 d 4 pert 0 smooth 1 dim H^{k,k}_prim 1107 dim K 4
+v 4 d 4 pert 1 smooth 1 dim H^{k,k}_prim 1107 dim K 4
+v 5 d 3 pert 0 smooth 1 dim H^{k,k}_prim 252 dim K 3
+v 5 d 3 pert 1 smooth 1 dim H^{k,k}_prim 252 dim K 3
+v 3 d 3 pert 0 smooth 1 dim H^{k,k}_prim 20 dim K 19
+v 3 d 4 pert 0 smooth 1 dim H^{k,k}_prim 141 dim K 52
+v 4 d 3 pert 0 smooth 1 dim H^{k,k}_prim 70 dim K 38

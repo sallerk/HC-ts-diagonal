@@ -1,0 +1,54 @@
+// S3 constructive check: the six planes {y = c x} (c^6 = -1) on X_{F,F} = {F(x) + F(y) = 0} span the IVHS kernel K.
+// Class of a linear cycle: if X = {sum_{i=0}^{2} f_i g_i = 0} contains P = {f_0 = f_1 = f_2 = 0} (f_i linear), the
+// (2,2)-part of [P] in R_12 is a nonzero multiple of det(d(f_0,g_0,f_1,g_1,f_2,g_2)/d(x,y)) (Movasati-Villaflor /
+// Villaflor Loyola; exact normalization irrelevant here, only spans are used). The check is self-validating: the six
+// determinants must lie in K (planes persist over the diagonal family) and be independent mod J.
+// Prime 31981 = 1 mod 12, zeta12 = 14621. Usage: Singular -q planes_singular.sing
+ring r = 31981, (x0,x1,x2,y0,y1,y2), dp;
+option(redSB);
+proc sw(poly f) { return(subst(subst(subst(f, x0, y0), x1, y1), x2, y2)); }
+proc rnd(ideal m) { poly f = 0; int i; for (i = 1; i <= size(m); i++) { f = f + random(1, char(basering) - 1) * m[i]; } return(f); }
+proc divx(poly a, poly b) { list L = division(a, ideal(b)); if (L[2][1] != 0) { "NOT EXACT"; } return(L[1][1,1]); }
+// class polynomial of the plane {y = c x}, using F(x) + F(y) = F(y) - F(c x)  (c^6 = -1)
+proc planeclass(poly F, number c) {
+  poly A0 = sw(F);
+  poly A1 = subst(A0, y0, c * x0);
+  poly A2 = subst(A1, y1, c * x1);
+  poly A3 = subst(A2, y2, c * x2);
+  if (A3 + F != 0) { "decomposition check failed"; }
+  poly f0 = y0 - c * x0; poly f1 = y1 - c * x1; poly f2 = y2 - c * x2;
+  poly g0 = divx(A0 - A1, f0); poly g1 = divx(A1 - A2, f1); poly g2 = divx(A2 - A3, f2);
+  ideal fg = f0, g0, f1, g1, f2, g2;
+  matrix M[6][6]; int i, j;
+  for (i = 1; i <= 6; i++) { for (j = 1; j <= 6; j++) { M[i, j] = diff(fg[i], var(j)); } }
+  return(det(M));
+}
+proc inK(poly d, ideal sJ, ideal T) { int i; for (i = 1; i <= size(T); i++) { if (reduce(T[i] * d, sJ) != 0) { return(0); } } return(1); }
+ideal mx6 = kbase(std(ideal(y0,y1,y2)), 6);
+ideal T; int i; for (i = 1; i <= size(mx6); i++) { T[i] = mx6[i] + sw(mx6[i]); }
+int s, j; number z = 14621;
+for (s = 1; s <= 3; s++) {
+  system("random", 104729 * s);
+  poly F = rnd(mx6);
+  poly P = F + sw(F);
+  ideal sJ = std(jacob(P));
+  int okR = (dim(sJ) == 0) && (size(kbase(sJ, 12)) == 1751);
+  int kd = size(kbase(std(jacob(P) + T), 12));
+  ideal D; int nin = 0;
+  for (j = 1; j <= 6; j++) {
+    number c = z^(2 * j - 1);
+    D[j] = reduce(planeclass(F, c), sJ);
+    nin = nin + inK(D[j], sJ, T);
+    kill c;
+  }
+  int rk = 1751 - size(kbase(std(jacob(P) + D), 12));
+  // negative controls: a random degree-12 form, and the false "plane" y = x (not on X; c^6 = 1)
+  ideal m12 = kbase(sJ, 12);
+  poly rr = reduce(rnd(m12), sJ);
+  number one = 1;
+  poly fake = reduce(planeclass(F, one), sJ);
+  "seed", s, "R ok", okR, "dim K", kd, "planes in K", nin, "rank of planes", rk,
+    "| random in K", inK(rr, sJ, T), "fake plane in K", inK(fake, sJ, T);
+  kill F, P, sJ, okR, kd, D, nin, rk, m12, rr, one, fake;
+}
+quit;
