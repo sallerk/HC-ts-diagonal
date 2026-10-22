@@ -1,7 +1,7 @@
 # HC-ts-diagonal
 
 Code and data supporting the note *Linear subspaces and the Hodge classes of very general hypersurfaces
-F(x)+F(y)=0* (Kevin Saller, 2026), DOI [10.5281/zenodo.23329495](https://doi.org/10.5281/zenodo.23329495).
+F(x)+F(y)=0* (K. Saller, 2026), DOI [10.5281/zenodo.23329495](https://doi.org/10.5281/zenodo.23329495).
 
 **Subject.** For a form F of degree d in v variables, the note studies the hypersurface
 X_F = {F(x) + F(y) = 0} in P^{2v-1}, of dimension 2k = 2v - 2. It contains the d linear spaces

@@ -2,7 +2,7 @@ Supporting code and data for the note
 "Linear subspaces and the Hodge classes of very general hypersurfaces F(x)+F(y)=0"
 ==================================================================================
 
-Status: accompanies the note (Kevin Saller, 2026), DOI 10.5281/zenodo.23329495
+Status: accompanies the note (K. Saller, 2026), DOI 10.5281/zenodo.23329495
 (https://doi.org/10.5281/zenodo.23329495); not peer reviewed.
 
 Setting. F is a form of degree d in v variables x = (x_1..x_v), and X_F = {F(x) + F(y) = 0} in P^{2v-1}, of
